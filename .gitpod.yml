@@ -5,5 +5,5 @@
 tasks:
   - init: ./mvnw install -DskipTests=false
     command: |
-      docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=Pass123$ -d mysql:5.7
+      echo docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=Pass123$ -d mysql:5.7
 
