@@ -4,6 +4,6 @@
 
 tasks:
   - init: docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=Pass123$ -d mysql:5.7 && sudo apt install maven
-   
+    command: mysql -e "CREATE DATABASE project0;"
 
 
