@@ -1,4 +1,4 @@
-package com.revature.librarymanagement;
+package com.revature.lib;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.times;
