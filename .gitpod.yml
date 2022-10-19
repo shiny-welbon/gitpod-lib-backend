@@ -1,5 +1,4 @@
-#build the project
-# changed the readme
+# build the project
 tasks:
   - name: Setup maven
     init: mvn install
