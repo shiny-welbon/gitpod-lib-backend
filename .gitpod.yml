@@ -3,10 +3,12 @@
 tasks:
   - name: Setup maven
     init: mvn install
-  - name: Adding Mysql  
+  - name: Setup Mysql  
     init: docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=Pass123$ -d mysql:5.7 && sudo apt install maven && docker exec -it some-mysql  mysql -uroot -pPass123$
   - name: Example of passing an environment variable to a command
-    command: echo "$DOMAIN"      
+    env:
+      PRINT_ME: "GitpodID"
+    command: echo "$PRINT_ME"  
   - name: Call revpro    
     command: >-
           curl -X POST -H 'Content-type: application/json'
