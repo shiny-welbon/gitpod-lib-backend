@@ -1,4 +1,5 @@
 # build the project
+# check to change
 tasks:
   - name: Setup maven
     init: mvn install
